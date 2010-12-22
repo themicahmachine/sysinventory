@@ -95,7 +95,7 @@ class Sysinventory_Department {
     function getDepartmentsByUsername(){
         // if a user is a deity, they get everything...
          if(Current_User::isDeity()){
-            $db = &new PHPWS_DB('sysinventory_department');
+            $db = new PHPWS_DB('sysinventory_department');
             $db->addColumn('description');
             $db->addColumn('id');
             $list = $db->select();

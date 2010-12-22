@@ -19,7 +19,7 @@
         $tpl['HOMELINK'] = PHPWS_Text::moduleLink('Back to Menu','sysinventory');
         
         // Form for adding new department
-        $form = &new PHPWS_Form('add_department');
+        $form = new PHPWS_Form('add_department');
         $form->addText('description');
         $form->setLabel('description','Description');
         $form->addSubmit('submit','Add Department');

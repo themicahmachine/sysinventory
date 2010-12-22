@@ -23,7 +23,7 @@
         $tpl['ADD_SYSTEM_LINK'] = PHPWS_Text::moduleLink('Add New System','sysinventory',array('action'=>'edit_system'));
 
         // set up the pager
-        $pager = &new DBPager('sysinventory_system','Sysinventory_System');
+        $pager = new DBPager('sysinventory_system','Sysinventory_System');
         $pager->setModule('sysinventory');
         $pager->setTemplate('sysinventory_list_results.tpl');
         $pager->setReportRow('report_row');
